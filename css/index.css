@@ -179,11 +179,23 @@ nav .top {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  nav .top {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+}
 nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  nav a {
+    padding: 2rem;
+  }
 }
 .footer {
   width: 100%;
@@ -196,11 +208,33 @@ nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
+}
+.home .intro {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .intro .welcome {
+  margin-top: 2rem;
+}
+.home .intro .welcome p {
+  margin-bottom: 1rem;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -217,6 +251,12 @@ nav a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
@@ -229,6 +269,11 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 90%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -238,7 +283,37 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  width: 95%;
+  color: #FFFFFF;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

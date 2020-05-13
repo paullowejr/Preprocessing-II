@@ -5,6 +5,13 @@ nav{
     margin: 0 auto 1%;
     padding: 1% 0;
     .flexb(space-between, center);
+
+    @media @mobile{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        }
+
     }
 
     border-bottom: 2px dashed @navigation-border;
@@ -14,6 +21,11 @@ nav{
         color: @shark;
         font-size: 1.6rem;
         padding: 1rem;
+
+        @media @mobile{
+            padding: 2rem;
+            
+        }
 
     }
 }

@@ -4,3 +4,19 @@
     justify-content: @justify;
     align-items: @align;
 }//closes flexb
+
+.btnstyle(@main:@eastern-blue, @width: 95%, @font:@white){
+    .flexb(center, center);
+    background-color: @main;
+    width: @width;
+    color: @font;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    
+
+    @media @mobile{
+        width: 100%;
+        margin: 0 auto;
+    }//closes phone btnstyle
+}//closes btnstyle
